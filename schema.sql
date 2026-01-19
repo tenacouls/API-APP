@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS cityes;
+
+CREATE TABLE cityes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    city TEXT NOT NULL,
+    country TEXT NOT NULL,
+    population INT NOT NULL
+);
