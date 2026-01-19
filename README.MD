@@ -24,7 +24,7 @@ To deploy application you can follow this steps:
 1. Clone repo
  
     ```Bash
-    git clone 
+    git clone https://github.com/tenacouls/API-APP/tree/main
     ```
 2. Start minikube cluster
 
