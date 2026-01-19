@@ -1,5 +1,0 @@
-{
-    "city": "Dubai",
-    "country": "AE",
-    "population": 4040000
-}
