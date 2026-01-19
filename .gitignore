@@ -1,4 +1,4 @@
-#dDelete folders#
-.\__pycache__
-.\api-env
-.\instance
+#Ignore folders#
+__pycache__/
+api-env/
+instance/
