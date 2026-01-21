@@ -58,10 +58,10 @@ To deploy application you can follow this steps:
     ```
 5. Setup port-forwarding
     ```
-    kubectl port-forward service/api-app 5000:5000
+    kubectl port-forward service/api-app 5000:5000 -n api-app
     ```
     
-After that, you can access the api at the URL: http://localhost:5000 -n api-app
+After that, you can access the api at the URL: http://localhost:5000
 
 ## How to work with API
 
