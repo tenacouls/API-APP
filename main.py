@@ -26,18 +26,15 @@ class Cities(db.Model):
     
 with app.app_context():
     db.create_all()
-
+    
+# Default route with Welcome message
 @app.route("/")
 def home():
     return jsonify({"messege": "Welcome to City Population app"})
 
-# @app.route("/upsert")
-# def home():
-#     return jsonify({"messege": "Welcome to City Population app"})
 
 
-
-#Endpoint for cities
+#Endpoint to retrive cities from API
 @app.route("/cities", methods=["GET"])
 def get_cities():
     cities = Cities.query.all()
@@ -74,7 +71,6 @@ def add_city():
     return jsonify(new_city.to_dict()), 201
 
 #Update CITY
-
 @app.route("/cities/<int:city_id>", methods=["PUT"])
 def update_city(city_id):
     data = request.get_json()
@@ -91,8 +87,7 @@ def update_city(city_id):
     else:
         return jsonify({"error": "City not found!"}), 404
     
-#Delete city from list
-    
+#Delete city from DB
 @app.route("/cities/<int:city_id>",methods=["DELETE"])
 def delete_city(city_id):
     city = Cities.query.get(city_id)
@@ -104,6 +99,6 @@ def delete_city(city_id):
     else:
         return jsonify({"error": "City not found!"}), 404
 
-
+#Setup flask web server to 0.0.0.0 endpoint with 5000 port
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=5000)

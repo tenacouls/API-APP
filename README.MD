@@ -61,7 +61,7 @@ To deploy application you can follow this steps:
     kubectl port-forward service/api-app 5000:5000
     ```
     
-After that, you can access the api at the URL: http://localhost:5000
+After that, you can access the api at the URL: http://localhost:5000 -n api-app
 
 ## How to work with API
 
@@ -139,3 +139,4 @@ To delete object you need to know object id. After you recived object id you can
 7. Setup security context for pods and containers to avoid security vulnerabilities.
 8. Create PVC and mount it to Data Base Container to store information safely.
 9. Setup RBAC acces to different API endpoints.
+10. Add feature to send a few JSON obects to DB on ```/cities``` endpoint

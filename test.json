@@ -1,15 +1,17 @@
+[
+{
+    "city": "Berlin",
+    "country": "GE",
+    "population": 3700000
+},
 {
     "city": "Dubai",
     "country": "AE",
-    "population": 4040000
-}
+    "population": 4000000
+},
 {
-    "city": "Moscow",
-    "country": "RU",
-    "population": 13400000
+    "city": "New-York",
+    "country": "US",
+    "population": 8467513
 }
-{
-    "city": "Paris",
-    "country": "FR",
-    "population": 2100000
-}
+]
